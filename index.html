@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoring Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoring</h1>
+        <p>Fill out the form below to schedule your mentoring</p>
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Personal information</legend>
+
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="mentoring-name">Name</label>
+                <input type="text" id="mentoring-name" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mentoring-surname">Surname</label>
+                <input type="text" id="mentoring-surname" />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentoring-email"
+                >E-mail <span>(Enter a valid e-mail)</span></label
+              >
+              <input type="email" id="mentoring-email" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentoring-password"
+                >Password <span>(Minimum 8 characters)</span></label
+              >
+              <input type="password" id="mentoring-password" minlength="8" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Mentor information</legend>
+
+            <div class="input-wrapper">
+              <label for="mentoring-name">Mentor's name</label>
+              <input type="text" id="mentoring-name" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Available times</legend>
+
+            <h2>First mentoring</h2>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Date</label>
+                <input type="date" id="event-date" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-start">Start</label>
+                <input type="time" id="event-start" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-end">End</label>
+                <input type="time" id="event-end" />
+              </div>
+            </div>
+
+            <h2>Second mentoring</h2>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Date</label>
+                <input type="date" id="event-date" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-start">Start</label>
+                <input type="time" id="event-start" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-end">End</label>
+                <input type="time" id="event-end" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <footer>
+        <input class="button" form="my-form" type="submit" value="Save" />
+      </footer>
+    </div>
+  </body>
+</html>
